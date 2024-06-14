@@ -1,0 +1,19 @@
+﻿@using Tarea2_02_09.Models
+@model IEnumerable<Cliente>
+@{
+    ViewBag.Title = "Buscar";
+}
+
+<h2>Buscar</h2>
+
+<div>
+    @using (Html.BeginForm())
+    {
+        <en>Nombre del cliente</en>
+        @Html.TextBox("nombre","")
+        <button>Consultar</button>
+    }
+</div>
+<div>
+    @Html.Partial("VistaParcial")
+</div>
